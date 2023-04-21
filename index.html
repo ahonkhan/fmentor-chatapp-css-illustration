@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Chat App CSS Illustration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        .scrollthin {
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <main
+        class="min-h-screen overflow-hidden relative flex-col md:flex-row md:text-start text-center py-[56px] flex px-8 justify-center gap-8 md:gap-[124px] items-center">
+
+        <div
+            class="absolute -translate-x-1/2 md:-translate-x-[130px] top-0 left-0 h-[438px] md:h-[700px] rounded-b-full w-full md:w-[500px] illustration-top">
+        </div>
+        <div
+            class="absolute translate-x-1/2 md:translate-x-[130px] bottom-0 right-0 h-[438px] md:h-[700px] rounded-t-full w-full md:w-[500px] illustration-bottom">
+        </div>
+
+        <div class="chatbox z-[999]  h-[508px] w-[250px] flex items-center justify-center">
+            <div class="chatbox__inner  h-[485px] w-[228px]">
+                <div class="chatbox__header relative flex items-end h-[75px] px-[15px] pb-[12px]">
+                    <div class="cap-wrapper justify-between flex items-center w-full">
+                        <div class="left__cap flex items-center gap-1">
+                            <button class="icon">
+                                <i class="bi bi-chevron-compact-left"></i>
+                            </button>
+                            <div class="profile">
+                                <img class="w-6 h-6 rounded-full" src="./images/avatar.jpg" alt="">
+                            </div>
+                            <div class="name ">
+                                <p class="text-[12px] font-medium leading-[13px] profile-name">Samuel Green</p>
+                                <p class="text-[10px] profile-status opacity-80">Available for work</p>
+                            </div>
+                        </div>
+                        <div class="right__cap">
+                            <button><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox-body  pt-1 px-2.5">
+                    <div class="chat-area scrollthin overflow-y-auto flex flex-col gap-1.5">
+                        <div class="incoming-wrapper flex justify-start">
+                            <div class="incoming max-w-[168px] rounded-t-md rounded-br-md rounded-bl-sm px-2 py-2">
+                                <p class="text-[11px] opacity-90 leading-[13px]"> That sounds great. I’d be happy with
+                                    that.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="incoming-wrapper flex justify-start">
+                            <div class="incoming max-w-[168px] rounded-t-md rounded-br-md rounded-bl-sm px-2 py-2">
+                                <p class="text-[11px] opacity-90 leading-[13px]">
+                                    Could you send over some pictures of your dog, please?
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="outgoing-wrapper flex justify-end">
+                            <div
+                                class="outgoing-photos flex gap-2 max-w-[168px] rounded-t-md rounded-bl-md  rounded-br-sm px-2 py-2">
+                                <img class="w-10 rounded-md" src="./images/dog-image-1.jpg" alt="">
+                                <img class="w-10 rounded-md" src="./images/dog-image-2.jpg" alt="">
+                                <img class="w-10 rounded-md" src="./images/dog-image-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="outgoing-wrapper flex justify-end">
+                            <div class="outgoing max-w-[168px] rounded-t-md rounded-bl-md  rounded-br-sm px-2 py-2">
+                                <p class="text-[11px] opacity-90 leading-[13px]">
+                                    Here are a few pictures. She’s a happy girl!
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="outgoing-wrapper flex justify-end">
+                            <div class="outgoing max-w-[168px] rounded-t-md rounded-bl-md rounded-br-sm px-2 py-2">
+                                <p class="text-[11px] opacity-90 leading-[13px]">
+                                    Can you make it?
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="incoming-wrapper flex justify-start">
+                            <div class="incoming max-w-[168px] rounded-t-md rounded-br-md rounded-bl-sm px-2 py-2">
+                                <p class="text-[11px] opacity-90 leading-[13px]">
+                                    She looks so happy! The time we discussed works. How long shall I take her out for?
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="incoming-wrapper flex justify-start">
+                            <div
+                                class="incoming-attactment items-center flex justify-between text-[11px] w-[168px] rounded-t-md rounded-br-md rounded-bl-sm px-2 py-1.5">
+                                <div class="flex items-center gap-3">
+                                    <div class="icon w-4 h-4 rounded-full border-2 opacity-50"></div>
+                                    <p class="">30 min walk</p>
+                                </div>
+                                <p class="font-bold text-lg">$29</p>
+                            </div>
+                        </div>
+                        <div class="incoming-wrapper flex justify-start">
+                            <div
+                                class="incoming-attactment items-center flex justify-between text-[11px] w-[168px] rounded-t-md rounded-br-md rounded-bl-sm px-2 py-1.5">
+                                <div class="flex items-center gap-3">
+                                    <div class="icon w-4 h-4 rounded-full border-2 opacity-50"></div>
+                                    <p class="">1 hour walk</p>
+                                </div>
+                                <p class="font-bold text-lg">$49</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="chat-footer  h-[50px]  flex items-center">
+                        <div
+                            class="input-box bg-white justify-between w-full rounded-[25px] overflow-hidden flex items-center w-full h-[40px]">
+                            <input type="text"
+                                class="text-[10px] w-full px-4 h-full outline-none placeholder:text-slate-300 text-slate-400"
+                                placeholder="Type a message...">
+
+                            <button
+                                class="shrink-0 send-btn bg-rose-500 flex items-center justify-center rounded-full text-sm mr-2 pl-0.5 pt-0.5 h-6 w-6"><i
+                                    class="bi bi-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-contents z-[999]  md:w-[445px]">
+            <h1 class="text-[32px] md:text-[40px] font-medium"> Simple booking
+            </h1>
+            <div class="h-5"></div>
+            <p class="text-subtext text-sm sm:text-base leading-[28px]"> Stay in touch with our dog walkers through the
+                chat interface. This makes it easy to
+                discuss arrangements and make bookings. Once the walk has been completed you can rate
+                your walker and book again all through the chat.
+            </p>
+        </div>
+    </main>
+
+    <footer class="py-4 text-sm bg-slate-200 text-slate-800 text-center">
+        <div class="attribution ">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/ahonkazi"><span class="text-rose-500">Ahon Khan</span></a>.
+        </div>
+    </footer>
+</body>
+
+</html>
